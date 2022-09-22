@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <ImageView
         android:id="@+id/img1"
@@ -53,12 +53,13 @@
         android:fontFamily="@font/amiko"
         android:text="Elige tu candidato"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.261" />
 
     <RadioGroup
         android:layout_width="164dp"
@@ -71,26 +72,32 @@
         app:layout_constraintVertical_bias="0.551">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbVV"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Vivían Valenzuela" />
+            android:fontFamily="@font/amiko"
+            android:text="Vivían Valenzuela"
+            android:textSize="16sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbOA"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Omar Aizpurúa" />
+            android:fontFamily="@font/amiko"
+            android:text="Omar Aizpurúa"
+            android:textSize="16sp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbMC"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Martín Candanedo" />
+            android:fontFamily="@font/amiko"
+            android:text="Martín Candanedo"
+            android:textSize="16sp" />
     </RadioGroup>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgVV"
         android:layout_width="107dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +109,7 @@
         app:srcCompat="@drawable/vivian_valenzuela" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgOA"
         android:layout_width="107dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,7 +121,7 @@
         app:srcCompat="@drawable/omar_aizpurua" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgMC"
         android:layout_width="107dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -137,6 +144,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintVertical_bias="0.811" />
+
+    <TextView
+        android:id="@+id/tv_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/amiko"
+        android:minHeight="48dp"
+        android:text="Resultados >"
+        android:textColor="#68086C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
