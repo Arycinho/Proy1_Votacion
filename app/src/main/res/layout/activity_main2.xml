@@ -62,8 +62,8 @@
         app:layout_constraintVertical_bias="0.261" />
 
     <RadioGroup
-        android:layout_width="164dp"
-        android:layout_height="318dp"
+        android:layout_width="204dp"
+        android:layout_height="314dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.806"
@@ -142,9 +142,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.816" />
 
     <TextView
         android:id="@+id/tv_btn2"

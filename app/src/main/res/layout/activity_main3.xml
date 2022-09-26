@@ -46,18 +46,6 @@
 
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/imgOA"
-        android:layout_width="107dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559"
-        app:srcCompat="@drawable/omar_aizpurua" />
-
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
@@ -95,10 +83,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <TextView
         android:id="@+id/tvres1"
@@ -126,6 +114,32 @@
         app:layout_constraintTop_toBottomOf="@+id/tvVV"
         app:layout_constraintVertical_bias="0.089" />
 
+    <ImageView
+        android:id="@+id/imgOA"
+        android:layout_width="107dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559"
+        app:srcCompat="@drawable/omar_aizpurua" />
+
+    <TextView
+        android:id="@+id/tvOA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko"
+        android:text="Omar Aizpurúa"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvres3"
         android:layout_width="wrap_content"
@@ -140,19 +154,17 @@
         app:layout_constraintVertical_bias="0.033" />
 
     <TextView
-        android:id="@+id/tvOA"
+        android:id="@+id/tvres4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko"
-        android:text="Omar Aizpurúa"
+        android:text="Porcentaje:"
         android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toEndOf="@+id/imgOA"
+        app:layout_constraintTop_toBottomOf="@+id/tvOA"
+        app:layout_constraintVertical_bias="0.121" />
 
     <ImageView
         android:id="@+id/imgMC"
@@ -167,17 +179,19 @@
         app:srcCompat="@drawable/martin_candanedo" />
 
     <TextView
-        android:id="@+id/tvres6"
+        android:id="@+id/tvMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Porcentaje:"
+        android:fontFamily="@font/amiko"
+        android:text="Martín Candanedo"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toEndOf="@+id/imgMC"
-        app:layout_constraintTop_toBottomOf="@+id/tvMC"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689" />
 
     <TextView
         android:id="@+id/tvres5"
@@ -193,22 +207,7 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <TextView
-        android:id="@+id/tvMC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amiko"
-        android:text="Omar Aizpurúa"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
-    <TextView
-        android:id="@+id/tvres4"
+        android:id="@+id/tvres6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Porcentaje:"
@@ -216,12 +215,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toEndOf="@+id/imgOA"
-        app:layout_constraintTop_toBottomOf="@+id/tvOA"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintStart_toEndOf="@+id/imgMC"
+        app:layout_constraintTop_toBottomOf="@+id/tvMC"
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
-        android:id="@+id/tv_btn2"
+        android:id="@+id/tv_btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -232,9 +231,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.925" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
