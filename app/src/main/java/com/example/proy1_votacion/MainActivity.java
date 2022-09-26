@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView img1;
     FrameLayout frmlay;
     Button btn1;
+
     String cedu;
     static ArrayList<String> cedula = new ArrayList<>();
 
@@ -27,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //ArrayList<String> cedula = new ArrayList<>();
 
 
         tvtile = findViewById(R.id.tvtitle);
@@ -42,29 +42,25 @@ public class MainActivity extends AppCompatActivity {
         tv_btn = findViewById(R.id.tv_btn);
 
 
+        //Accion al presionar boton de verificar
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 cedu = et1.getText().toString();
 
-
-                //String search = cedu;
-
                 boolean votar = cedula.contains(cedu);
 
                 if (votar) {
-                    Toast val = Toast.makeText(getApplicationContext(), "El elemento existe", Toast.LENGTH_LONG);
+                    Toast val = Toast.makeText(getApplicationContext(), "Ya has votado.", Toast.LENGTH_LONG);
                     val.show();
-                    //int posi = cedula.indexOf(search);
-                    //tv3.setText("Posición: "+posi);
+
                 } else {
-                    Toast val = Toast.makeText(getApplicationContext(), "El elemento no existe", Toast.LENGTH_LONG);
+                    Toast val = Toast.makeText(getApplicationContext(), "Estas verificado.", Toast.LENGTH_SHORT);
                     val.show();
                     Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-                    //intent.putExtra("cedula",cedula);
+
                     startActivity(intent);
-                    //tv3.setText("Posición: ");
 
                 }
                 cedula.add(cedu);
@@ -72,6 +68,17 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+
+        //Accion al presionar el boton de resultados
+        Intent intent_ford = new Intent(getApplicationContext(), MainActivity3.class);
+        tv_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent_ford);
+            }
+        });
+
 
     }
 }

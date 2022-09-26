@@ -18,8 +18,9 @@ public class MainActivity2 extends AppCompatActivity {
     FrameLayout frmlay;
     RadioButton rbVV, rbOA, rbMC;
     Button btn2;
-    int count1 = 0, count2 = 0, count3 = 0;
-    Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+
+    static int count1 = 0, count2 = 0, count3 = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,10 @@ public class MainActivity2 extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
         tv_btn2 = findViewById(R.id.tv_btn2);
 
+        //Toast.makeText(getApplicationContext(), "ABRE ACTIVIDAD 2", Toast.LENGTH_LONG);
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
+
         //Accion al presionar el boton votar
         btn2.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -48,12 +53,24 @@ public class MainActivity2 extends AppCompatActivity {
                 if (rbVV.isChecked()){
                     count1++;
                     Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
+                    rbOA.setClickable(false);
+                    rbMC.setClickable(false);
+                    btn2.setClickable(false);
+
                 } else if (rbOA.isChecked()){
                     count2++;
                     Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
+                    rbVV.setClickable(false);
+                    rbMC.setClickable(false);
+                    btn2.setClickable(false);
+
                 } else if (rbMC.isChecked()){
                     count3++;
                     Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
+                    rbVV.setClickable(false);
+                    rbOA.setClickable(false);
+                    btn2.setClickable(false);
+
                 } else if (!rbMC.isChecked() && !rbVV.isChecked() && !rbOA.isChecked()){
                     Toast.makeText(getApplicationContext(),"Elije un candidato.", Toast.LENGTH_LONG).show();
                 }
@@ -64,6 +81,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             }
         });
+
 
         //Accion al presionar el boton de resultados
         tv_btn2.setOnClickListener(new View.OnClickListener() {
