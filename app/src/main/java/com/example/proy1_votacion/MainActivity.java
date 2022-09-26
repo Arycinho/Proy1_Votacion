@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView img1;
     FrameLayout frmlay;
     Button btn1;
+    String cedu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
