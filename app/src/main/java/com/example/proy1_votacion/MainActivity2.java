@@ -16,10 +16,10 @@ public class MainActivity2 extends AppCompatActivity {
     TextView tvtile, tv1, tv_btn2;
     ImageView img1, imgVV, imgOA, imgMC;
     FrameLayout frmlay;
-    RadioButton rbVV, rbOA, rbMC;
+    RadioButton rbVV, rbOA, rbMC, rbBL;
     Button btn2;
 
-    static int count1 = 0, count2 = 0, count3 = 0;
+    static int count1 = 0, count2 = 0, count3 = 0, count4 = 0;
 
 
     @Override
@@ -39,6 +39,8 @@ public class MainActivity2 extends AppCompatActivity {
         imgOA = findViewById(R.id.imgOA);
         imgMC = findViewById(R.id.imgMC);
 
+        rbBL = findViewById(R.id.rbBL);
+
         btn2 = findViewById(R.id.btn2);
         tv_btn2 = findViewById(R.id.tv_btn2);
 
@@ -55,6 +57,7 @@ public class MainActivity2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
                     rbOA.setClickable(false);
                     rbMC.setClickable(false);
+                    rbBL.setClickable(false);
                     btn2.setClickable(false);
 
                 } else if (rbOA.isChecked()){
@@ -62,6 +65,7 @@ public class MainActivity2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
                     rbVV.setClickable(false);
                     rbMC.setClickable(false);
+                    rbBL.setClickable(false);
                     btn2.setClickable(false);
 
                 } else if (rbMC.isChecked()){
@@ -69,6 +73,15 @@ public class MainActivity2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
                     rbVV.setClickable(false);
                     rbOA.setClickable(false);
+                    rbBL.setClickable(false);
+                    btn2.setClickable(false);
+
+                } else if (rbBL.isChecked()){
+                    count4++;
+                    Toast.makeText(getApplicationContext(),"Tu voto se ha registrado.", Toast.LENGTH_LONG).show();
+                    rbVV.setClickable(false);
+                    rbOA.setClickable(false);
+                    rbMC.setClickable(false);
                     btn2.setClickable(false);
 
                 } else if (!rbMC.isChecked() && !rbVV.isChecked() && !rbOA.isChecked()){
@@ -78,6 +91,7 @@ public class MainActivity2 extends AppCompatActivity {
                 intent.putExtra("conteo1", count1);
                 intent.putExtra("conteo2", count2);
                 intent.putExtra("conteo3", count3);
+                intent.putExtra("conteo4", count4);
 
             }
         });

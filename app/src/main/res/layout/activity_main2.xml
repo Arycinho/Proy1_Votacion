@@ -59,22 +59,22 @@
         app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="0.24" />
 
     <RadioGroup
-        android:layout_width="185dp"
-        android:layout_height="317dp"
+        android:layout_width="182dp"
+        android:layout_height="375dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.859"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548">
+        app:layout_constraintVertical_bias="0.567">
 
         <RadioButton
             android:id="@+id/rbVV"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="105dp"
             android:fontFamily="@font/amiko"
             android:text="Vivían Valenzuela"
             android:textSize="16sp" />
@@ -82,7 +82,7 @@
         <RadioButton
             android:id="@+id/rbOA"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="110dp"
             android:fontFamily="@font/amiko"
             android:text="Omar Aizpurúa"
             android:textSize="16sp" />
@@ -90,9 +90,17 @@
         <RadioButton
             android:id="@+id/rbMC"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="106dp"
             android:fontFamily="@font/amiko"
             android:text="Martín Candanedo"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbBL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiko"
+            android:text="Voto en Blanco"
             android:textSize="16sp" />
     </RadioGroup>
 
@@ -105,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372"
+        app:layout_constraintVertical_bias="0.336"
         app:srcCompat="@drawable/vivian_valenzuela" />
 
     <ImageView
@@ -117,7 +125,6 @@
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
         app:srcCompat="@drawable/omar_aizpurua" />
 
     <ImageView
@@ -129,7 +136,7 @@
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"
+        app:layout_constraintVertical_bias="0.66"
         app:srcCompat="@drawable/martin_candanedo" />
 
     <Button
@@ -142,10 +149,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.816" />
+        app:layout_constraintVertical_bias="0.855" />
 
     <TextView
         android:id="@+id/tv_btn2"
@@ -159,9 +165,9 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.956" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
